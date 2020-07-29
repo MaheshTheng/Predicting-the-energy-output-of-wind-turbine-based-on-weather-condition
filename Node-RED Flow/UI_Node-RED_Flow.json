@@ -1,0 +1,2726 @@
+[
+    {
+        "id": "67b70230.48fa6c",
+        "type": "tab",
+        "label": "UI_User_Input",
+        "disabled": false,
+        "info": "<html>\n<style>\n    body{\n        background-image:url(\"https://cdn.britannica.com/75/114975-050-E61977EE/Wind-turbines-Tehachapi-Calif.jpg\");\n        background-size:cover;\n    }\n</style>\n<body></body>\n</html>"
+    },
+    {
+        "id": "adb95456.970bb8",
+        "type": "tab",
+        "label": "UI_Cloud_Input",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "e017ee6d.f0446",
+        "type": "tab",
+        "label": "Prediction",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "aea71465.ff2d58",
+        "type": "tab",
+        "label": "Table",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "52c2bcea.0a9414",
+        "type": "ui_base",
+        "z": 0,
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#000000",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "true",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "c48e83e9.9be3f",
+        "type": "ui_group",
+        "z": "",
+        "name": "Status",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "f6d16679.915ca8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Time / Date",
+        "tab": "13b1e90b.c88e97",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false
+    },
+    {
+        "id": "ebd1ca29.930528",
+        "type": "ibmiot",
+        "z": "",
+        "name": "",
+        "keepalive": "60",
+        "serverName": "iekt4p.messaging.internetofthings.ibmcloud.com",
+        "cleansession": true,
+        "appId": "",
+        "shared": false
+    },
+    {
+        "id": "5199a69.114df58",
+        "type": "ui_group",
+        "z": "",
+        "name": "Prarameter",
+        "tab": "476ba178.20f2c",
+        "order": 2,
+        "disp": true,
+        "width": 10,
+        "collapse": false
+    },
+    {
+        "id": "32c5b007.56bcf",
+        "type": "ui_group",
+        "z": "",
+        "name": "Input",
+        "tab": "13b1e90b.c88e97",
+        "order": 1,
+        "disp": true,
+        "width": 7,
+        "collapse": false
+    },
+    {
+        "id": "c862b226.3f667",
+        "type": "ui_group",
+        "z": "",
+        "name": "Energy Output",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "ef45188e.e10998",
+        "type": "ui_group",
+        "z": "",
+        "name": "Prediction",
+        "tab": "983d6a44.c2a2e8",
+        "order": 1,
+        "disp": true,
+        "width": 25,
+        "collapse": false
+    },
+    {
+        "id": "638831c7.a2b42",
+        "type": "ui_group",
+        "z": "",
+        "name": "Prediction Form",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "a5ff8e16.6b218",
+        "type": "ui_group",
+        "z": "",
+        "name": "Energy Input",
+        "tab": "476ba178.20f2c",
+        "order": 1,
+        "disp": true,
+        "width": 10,
+        "collapse": false
+    },
+    {
+        "id": "13b1e90b.c88e97",
+        "type": "ui_tab",
+        "z": "",
+        "name": "User Input",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "e5a0ba83.a65cc8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Prediction Form",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "839ab706.992448",
+        "type": "ui_group",
+        "z": "",
+        "name": "Energy Output",
+        "tab": "",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "33d9a891.e91c08",
+        "type": "ui_group",
+        "z": "",
+        "name": "Energy Output",
+        "tab": "13b1e90b.c88e97",
+        "order": 3,
+        "disp": true,
+        "width": "10",
+        "collapse": false
+    },
+    {
+        "id": "7b9dba39.4240e4",
+        "type": "ui_group",
+        "z": "",
+        "name": "Prediction Form",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "a5b41c5e.f2f2a",
+        "type": "ui_group",
+        "z": "",
+        "name": "Energy Output",
+        "tab": "",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "c19b6278.33465",
+        "type": "cos-config",
+        "z": 0,
+        "apiKeyId": "jh5Jw8GkcBv85XjW063W7Q9itOBYPmfenhM5bDz4u5c7",
+        "location": "ap-geo",
+        "ibmAuthEndpoint": "https://iam.ng.bluemix.net/oidc/token",
+        "endpoint": "s3.ap-geo.objectstorage.softlayer.net",
+        "serviceInstanceId": "https://control.cloud-object-storage.cloud.ibm.com/v2/endpoints",
+        "hmac": false,
+        "accesskeyid": "",
+        "accesskey": "",
+        "name": "prediction"
+    },
+    {
+        "id": "22f165f8.0c022a",
+        "type": "cos-config",
+        "z": 0,
+        "apiKeyId": "jh5Jw8GkcBv85XjW063W7Q9itOBYPmfenhM5bDz4u5c7",
+        "location": "ap-geo",
+        "ibmAuthEndpoint": "https://iam.ng.bluemix.net/oidc/token",
+        "endpoint": "s3.ap-geo.objectstorage.softlayer.net",
+        "serviceInstanceId": "crn:v1:bluemix:public:cloud-object-storage:global:a/5e7c88de3bb9498ba003e31b3b4331f0:62d16fde-9ee6-4a49-b809-102844695402::",
+        "hmac": false,
+        "accesskeyid": "",
+        "accesskey": "",
+        "name": "Prediction"
+    },
+    {
+        "id": "3ee8336.cf389cc",
+        "type": "cos-config",
+        "z": 0,
+        "apiKeyId": "",
+        "location": "",
+        "ibmAuthEndpoint": "https://iam.ng.bluemix.net/oidc/token",
+        "endpoint": "",
+        "serviceInstanceId": "",
+        "hmac": false,
+        "accesskeyid": "",
+        "accesskey": "",
+        "name": ""
+    },
+    {
+        "id": "9b492c67.b1bae",
+        "type": "cos-config",
+        "z": 0,
+        "apiKeyId": "F8XAVTunqdSGAQbuC5X_F4Yd_VcxLrZ3bwLQ2baOQlsk",
+        "location": "us-south",
+        "ibmAuthEndpoint": "https://iam.ng.bluemix.net/oidc/token",
+        "endpoint": "s3.us-south.objectstorage.softlayer.net",
+        "serviceInstanceId": "crn:v1:bluemix:public:cloud-object-storage:global:a/5e7c88de3bb9498ba003e31b3b4331f0:62d16fde-9ee6-4a49-b809-102844695402::",
+        "hmac": false,
+        "accesskeyid": "",
+        "accesskey": "",
+        "name": "prediction"
+    },
+    {
+        "id": "461e56e7.7e6a48",
+        "type": "cos-config",
+        "z": "",
+        "apiKeyId": "F8XAVTunqdSGAQbuC5X_F4Yd_VcxLrZ3bwLQ2baOQlsk",
+        "location": "us-south",
+        "ibmAuthEndpoint": "https://iam.ng.bluemix.net/oidc/token",
+        "endpoint": "s3.us-south.objectstorage.softlayer.net",
+        "serviceInstanceId": "crn:v1:bluemix:public:cloud-object-storage:global:a/5e7c88de3bb9498ba003e31b3b4331f0:62d16fde-9ee6-4a49-b809-102844695402::",
+        "hmac": false,
+        "accesskeyid": "",
+        "accesskey": "",
+        "name": "prediction"
+    },
+    {
+        "id": "476ba178.20f2c",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Cloud Input",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "983d6a44.c2a2e8",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Prediction",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "547c53bd.c5460c",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "a5ff8e16.6b218",
+        "order": 7,
+        "width": 10,
+        "height": 1
+    },
+    {
+        "id": "551b238.af064dc",
+        "type": "ui_group",
+        "z": "",
+        "name": "Charts",
+        "tab": "",
+        "order": 2,
+        "disp": false,
+        "width": "6"
+    },
+    {
+        "id": "58eadebe.05875",
+        "type": "ui_group",
+        "z": "",
+        "name": "Other",
+        "tab": "b8e94480.3433a8",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "3568dcd2.71d444",
+        "type": "ui_group",
+        "z": "",
+        "name": "Group 3",
+        "tab": "",
+        "order": 3,
+        "disp": false,
+        "width": "6"
+    },
+    {
+        "id": "8df57494.63e3d8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Prediction Form",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "825bdd81.9a16d",
+        "type": "ui_group",
+        "z": "",
+        "name": "Energy Output",
+        "tab": "",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "bcc46787.f09e08",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ef45188e.e10998",
+        "order": 1,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "195133bc.def10c",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ef45188e.e10998",
+        "order": 3,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "fbba0cbc.625a8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ef45188e.e10998",
+        "order": 5,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "278a378b.9b6948",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ef45188e.e10998",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "18d1a98a.ab27a6",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ef45188e.e10998",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "d956dbcc.415de8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ef45188e.e10998",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "40cc0303.55575c",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ef45188e.e10998",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "35c49b59.8659f4",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ef45188e.e10998",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "b4a51b83.a6cd88",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ef45188e.e10998",
+        "order": 13,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "d20e04a7.0d7bb8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ef45188e.e10998",
+        "order": 14,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "44f50045.7763",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ef45188e.e10998",
+        "order": 15,
+        "width": 25,
+        "height": 1
+    },
+    {
+        "id": "fa88a4d8.ed4df8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ef45188e.e10998",
+        "order": 16,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "16654f51.1b0441",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ef45188e.e10998",
+        "order": 18,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "5919d56c.8f774c",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ef45188e.e10998",
+        "order": 19,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "86245f93.2b9fa",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ef45188e.e10998",
+        "order": 20,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "9d715ae.cc0aba8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ef45188e.e10998",
+        "order": 21,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "d0c64cbe.99bca",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ef45188e.e10998",
+        "order": 22,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "ef7c266c.eaab58",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ef45188e.e10998",
+        "order": 23,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "15626e56.9ad452",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ef45188e.e10998",
+        "order": 24,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "b2c6fc91.fecc4",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ef45188e.e10998",
+        "order": 25,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "c87902df.f30ec",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ef45188e.e10998",
+        "order": 26,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "9bff61c2.e5466",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ef45188e.e10998",
+        "order": 27,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "addd79fd.088888",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ef45188e.e10998",
+        "order": 28,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "51673ccf.391854",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ef45188e.e10998",
+        "order": 29,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "85ad0ef2.a8be",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ef45188e.e10998",
+        "order": 30,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "3a3aadde.a7b092",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ef45188e.e10998",
+        "order": 31,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "56d7d3d3.29869c",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ef45188e.e10998",
+        "order": 32,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "a76d7397.590a8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ef45188e.e10998",
+        "order": 33,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "d7134e4d.7c1aa",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ef45188e.e10998",
+        "order": 34,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "edc7b53b.859a18",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ef45188e.e10998",
+        "order": 35,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "9565ff5f.ccccf",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ef45188e.e10998",
+        "order": 36,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "42da2475.adca9c",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ef45188e.e10998",
+        "order": 37,
+        "width": 25,
+        "height": 1
+    },
+    {
+        "id": "f3628649.c70ac8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ef45188e.e10998",
+        "order": 38,
+        "width": 25,
+        "height": 1
+    },
+    {
+        "id": "b8e94480.3433a8",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Other",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "c3e4c172.7f4f3",
+        "type": "openwhisk-service",
+        "z": "",
+        "name": "",
+        "api": "https://openwhisk.ng.bluemix.net/api/v1"
+    },
+    {
+        "id": "391a456.03bbdba",
+        "type": "http request",
+        "z": "67b70230.48fa6c",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": false,
+        "url": "https://eu-gb.ml.cloud.ibm.com/v3/wml_instances/add6b7cd-7881-485c-b8bf-2a625e8a2335/deployments/2590f8a2-9dfa-405c-b16d-d1a1c7a5f133/online",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 610,
+        "y": 440,
+        "wires": [
+            [
+                "5dff3359.c1b91c",
+                "41b684fb.38cfcc",
+                "5e5d1ecc.a54ae"
+            ]
+        ]
+    },
+    {
+        "id": "82dd925e.41dae",
+        "type": "function",
+        "z": "67b70230.48fa6c",
+        "name": "Input",
+        "func": "var t1 = global.get(\"t1\")\nvar t2 = global.get(\"t2\")\nvar t3 = global.get(\"t3\")\nvar t4 = global.get(\"t4\")\nvar t5 = global.get(\"t5\")\nvar v6 = global.get(\"v6\")\nvar v7 = global.get(\"v7\")\nvar v8 = global.get(\"v8\")\nvar v9 = global.get(\"v9\")\nvar v10 = global.get(\"v10\")\nvar v11 = global.get(\"v11\")\nvar v12 = global.get(\"v12\")\nvar v13 = global.get(\"v13\")\nvar v14 = global.get(\"v14\")\n\nvar token=msg.payload.access_token\nvar instance_id = \"add6b7cd-7881-485c-b8bf-2a625e8a2335\"\nmsg.headers={'Content-Type': 'application/json',\"Authorization\":\"Bearer \"+token,\"ML-Instance-ID\":instance_id}\nmsg.payload={\"fields\": ['Minute', 'Hour', 'Day', 'Month', 'Year', 'Wind Speed (m/s)' ,'Theoretical_Power_Curve (KWh)', 'Wind Direction', 'maxtempC', 'windGustKmph', 'DewPointC', 'windChillC', 'humidity', 'pressure'],\"values\": [[t1, t2, t3, t4, t5, v6, v7, v8, v9, v10, v11, v12, v13, v14]]}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 390,
+        "y": 440,
+        "wires": [
+            [
+                "391a456.03bbdba",
+                "f1147a21.079d98"
+            ]
+        ]
+    },
+    {
+        "id": "529f0a5b.626d94",
+        "type": "function",
+        "z": "67b70230.48fa6c",
+        "name": "Processing",
+        "func": "var apikey = \"7NRWE5AYj0sgvQeu9RI8M6qEymOldFxk2dtmbqj9LEKc\"\nmsg.headers={\"content-type\":\"application/x-www-form-urlencoded\"}\nmsg.payload={\"grant_type\":\"urn:ibm:params:oauth:grant-type:apikey\",\"apikey\":apikey}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 950,
+        "y": 1300,
+        "wires": [
+            [
+                "2f5f797a.4bd206",
+                "9589124e.bf883"
+            ]
+        ]
+    },
+    {
+        "id": "96ebd07d.0666d",
+        "type": "http request",
+        "z": "67b70230.48fa6c",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": false,
+        "url": "https://iam.cloud.ibm.com/identity/token",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 190,
+        "y": 440,
+        "wires": [
+            [
+                "82dd925e.41dae"
+            ]
+        ]
+    },
+    {
+        "id": "5dff3359.c1b91c",
+        "type": "function",
+        "z": "67b70230.48fa6c",
+        "name": "Parsing value for chart",
+        "func": "msg.payload=(Math.round(msg.payload.values[0][0]))\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 800,
+        "y": 620,
+        "wires": [
+            [
+                "5ddfde59.2d28e",
+                "c722bfe8.29906",
+                "ae326a.a5c05d98",
+                "bdd8033d.ab0bc"
+            ]
+        ]
+    },
+    {
+        "id": "5ddfde59.2d28e",
+        "type": "ui_chart",
+        "z": "67b70230.48fa6c",
+        "name": "LV Activation Power",
+        "group": "33d9a891.e91c08",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "Power Generate in KW",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "1300",
+        "removeOlder": 1,
+        "removeOlderPoints": "4",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 1080,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c722bfe8.29906",
+        "type": "ui_gauge",
+        "z": "67b70230.48fa6c",
+        "name": "Live",
+        "group": "f6d16679.915ca8",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "gtype": "wave",
+        "title": "Level",
+        "label": "KW",
+        "format": "",
+        "min": "0",
+        "max": "1300",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1060,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "ae326a.a5c05d98",
+        "type": "ui_text",
+        "z": "67b70230.48fa6c",
+        "group": "33d9a891.e91c08",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Power Generate",
+        "format": "{{msg.payload}} KW",
+        "layout": "col-center",
+        "x": 1090,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "fde3a3ca.60bcb",
+        "type": "function",
+        "z": "adb95456.970bb8",
+        "name": "Processing",
+        "func": "var apikey = \"7NRWE5AYj0sgvQeu9RI8M6qEymOldFxk2dtmbqj9LEKc\"\nmsg.headers={\"content-type\":\"application/x-www-form-urlencoded\"}\nmsg.payload={\"grant_type\":\"urn:ibm:params:oauth:grant-type:apikey\",\"apikey\":apikey}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 110,
+        "y": 260,
+        "wires": [
+            [
+                "6653333f.7dbc1c"
+            ]
+        ]
+    },
+    {
+        "id": "6653333f.7dbc1c",
+        "type": "http request",
+        "z": "adb95456.970bb8",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": false,
+        "url": "https://iam.cloud.ibm.com/identity/token",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 290,
+        "y": 260,
+        "wires": [
+            [
+                "5aafe182.e3c98"
+            ]
+        ]
+    },
+    {
+        "id": "5aafe182.e3c98",
+        "type": "function",
+        "z": "adb95456.970bb8",
+        "name": "Input",
+        "func": "var token=msg.payload.access_token\nvar instance_id = \"add6b7cd-7881-485c-b8bf-2a625e8a2335\"\nmsg.headers={'Content-Type': 'application/json',\"Authorization\":\"Bearer \"+token,\"ML-Instance-ID\":instance_id}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 470,
+        "y": 260,
+        "wires": [
+            [
+                "6ddfd1f.2b7bd3",
+                "40fc3ef8.c0e81"
+            ]
+        ]
+    },
+    {
+        "id": "40fc3ef8.c0e81",
+        "type": "http request",
+        "z": "adb95456.970bb8",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": false,
+        "url": "https://eu-gb.ml.cloud.ibm.com/v3/wml_instances/add6b7cd-7881-485c-b8bf-2a625e8a2335/deployments/2590f8a2-9dfa-405c-b16d-d1a1c7a5f133/online",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 650,
+        "y": 260,
+        "wires": [
+            [
+                "ff536745.693118",
+                "9ea0346f.ccef48",
+                "aa0c61a9.83c07"
+            ]
+        ]
+    },
+    {
+        "id": "b84df7d8.450998",
+        "type": "ui_chart",
+        "z": "adb95456.970bb8",
+        "name": "LV Activation Power",
+        "group": "a5ff8e16.6b218",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "label": "Power Generate in KW",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "1300",
+        "removeOlder": "1",
+        "removeOlderPoints": "10",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 1370,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b020d3f0.1f876",
+        "type": "ui_text",
+        "z": "adb95456.970bb8",
+        "group": "a5ff8e16.6b218",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Power",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 1330,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "2f5f797a.4bd206",
+        "type": "debug",
+        "z": "67b70230.48fa6c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 1090,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "f1147a21.079d98",
+        "type": "debug",
+        "z": "67b70230.48fa6c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 430,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "adcb936e.da458",
+        "type": "debug",
+        "z": "67b70230.48fa6c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 710,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "c77e1362.39086",
+        "type": "function",
+        "z": "67b70230.48fa6c",
+        "name": "Pre-processing",
+        "func": "global.set(\"t1\",msg.payload.t1)\nglobal.set(\"t2\",msg.payload.t2)\nglobal.set(\"t3\",msg.payload.t3)\nglobal.set(\"t4\",msg.payload.t4)\nglobal.set(\"t5\",msg.payload.t5)\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 540,
+        "y": 1300,
+        "wires": [
+            [
+                "adcb936e.da458",
+                "529f0a5b.626d94"
+            ]
+        ]
+    },
+    {
+        "id": "e9eae5ce.450c38",
+        "type": "ui_form",
+        "z": "67b70230.48fa6c",
+        "name": "",
+        "label": "Enter othere Parameter",
+        "group": "32c5b007.56bcf",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Wind Speed (m/s)",
+                "value": "v6",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Theoretical_Power_Curve (KWh)",
+                "value": "v7",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Wind Direction",
+                "value": "v8",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "maxtempC",
+                "value": "v9",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "windGustKmph",
+                "value": "v10",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "DewPointC",
+                "value": "v11",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "windChillC",
+                "value": "v12",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "humidity",
+                "value": "v13",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "pressure",
+                "value": "v14",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "v6": "",
+            "v7": "",
+            "v8": "",
+            "v9": "",
+            "v10": "",
+            "v11": "",
+            "v12": "",
+            "v13": "",
+            "v14": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "reset",
+        "topic": "",
+        "x": 130,
+        "y": 1220,
+        "wires": [
+            [
+                "9bf2d606.9b99e8"
+            ]
+        ]
+    },
+    {
+        "id": "6ad60fec.19308",
+        "type": "ui_form",
+        "z": "67b70230.48fa6c",
+        "name": "",
+        "label": "Year",
+        "group": "f6d16679.915ca8",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Year",
+                "value": "t5",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "t5": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "",
+        "x": 410,
+        "y": 1100,
+        "wires": [
+            [
+                "356894e2.7d25dc"
+            ]
+        ]
+    },
+    {
+        "id": "9bf2d606.9b99e8",
+        "type": "function",
+        "z": "67b70230.48fa6c",
+        "name": "Pre-processing",
+        "func": "global.set(\"v6\",msg.payload.v6)\nglobal.set(\"v7\",msg.payload.v7)\nglobal.set(\"v8\",msg.payload.v8)\nglobal.set(\"v9\",msg.payload.v9)\nglobal.set(\"v10\",msg.payload.v10)\nglobal.set(\"v11\",msg.payload.v11)\nglobal.set(\"v12\",msg.payload.v12)\nglobal.set(\"v13\",msg.payload.v13)\nglobal.set(\"v14\",msg.payload.v14)\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 260,
+        "y": 1300,
+        "wires": [
+            [
+                "f1771b50.a6f488",
+                "6ad60fec.19308"
+            ]
+        ]
+    },
+    {
+        "id": "f1771b50.a6f488",
+        "type": "debug",
+        "z": "67b70230.48fa6c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 310,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "e6c570f7.17673",
+        "type": "debug",
+        "z": "adb95456.970bb8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 370,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "f33cbf6f.22463",
+        "type": "debug",
+        "z": "adb95456.970bb8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 590,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "9f21ad14.05e29",
+        "type": "function",
+        "z": "adb95456.970bb8",
+        "name": "",
+        "func": "var b = Buffer.from(msg.payload);\nvar s = b.toString();\nvar out = s;\nmsg.payload = out;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 530,
+        "y": 700,
+        "wires": [
+            [
+                "f33cbf6f.22463",
+                "b9ce1ac7.ec1838"
+            ]
+        ]
+    },
+    {
+        "id": "b9ce1ac7.ec1838",
+        "type": "csv",
+        "z": "adb95456.970bb8",
+        "name": "",
+        "sep": ",",
+        "hdrin": true,
+        "hdrout": "",
+        "multi": "mult",
+        "ret": "\\r\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": false,
+        "x": 730,
+        "y": 700,
+        "wires": [
+            [
+                "db9b7eaa.18e34",
+                "a67526f8.e3e618"
+            ]
+        ]
+    },
+    {
+        "id": "db9b7eaa.18e34",
+        "type": "debug",
+        "z": "adb95456.970bb8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 830,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "18d09c08.2f7604",
+        "type": "inject",
+        "z": "adb95456.970bb8",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 120,
+        "y": 780,
+        "wires": [
+            [
+                "6670b5ae.3217ec"
+            ]
+        ]
+    },
+    {
+        "id": "6ddfd1f.2b7bd3",
+        "type": "debug",
+        "z": "adb95456.970bb8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 510,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "1652bc4f.c58624",
+        "type": "function",
+        "z": "adb95456.970bb8",
+        "name": "Parsing value for chart",
+        "func": "msg.payload=(msg.payload)\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1120,
+        "y": 200,
+        "wires": [
+            [
+                "b020d3f0.1f876",
+                "b84df7d8.450998",
+                "8d8a658f.dabbc8",
+                "818801bc.2a208"
+            ]
+        ]
+    },
+    {
+        "id": "f6c5a7a3.1c5138",
+        "type": "ui_button",
+        "z": "adb95456.970bb8",
+        "name": "",
+        "group": "a5ff8e16.6b218",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Fetch",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 90,
+        "y": 700,
+        "wires": [
+            [
+                "6670b5ae.3217ec",
+                "8eec39e3.e5dd98"
+            ]
+        ]
+    },
+    {
+        "id": "1f08408d.9e6b2f",
+        "type": "ui_template",
+        "z": "67b70230.48fa6c",
+        "group": "32c5b007.56bcf",
+        "name": "Background",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "format": "<html>\n<style>\n    body{\n        background-image:url(\"https://github.com/SmartPracticeschool/SBSPS-Challenge-3160-Predicting-the-energy-output-of-wind-turbine-based-on-weather-condition/blob/master/Images/backgroud.jpg?raw=true\");\n        background-size:cover;\n    }\n</style>\n<body></body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 70,
+        "y": 20,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3dac4bb4.358ee4",
+        "type": "ui_template",
+        "z": "adb95456.970bb8",
+        "group": "a5ff8e16.6b218",
+        "name": "Background",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "format": "<html>\n<style>\n    body{\n        background-image:url(\"https://github.com/SmartPracticeschool/SBSPS-Challenge-3160-Predicting-the-energy-output-of-wind-turbine-based-on-weather-condition/blob/master/Images/backgroud.jpg?raw=true\");\n        background-size:cover;\n    }\n</style>\n<body></body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 70,
+        "y": 20,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "41b684fb.38cfcc",
+        "type": "debug",
+        "z": "67b70230.48fa6c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 950,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "dfc7a20b.b7606",
+        "type": "inject",
+        "z": "67b70230.48fa6c",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 80,
+        "y": 1380,
+        "wires": [
+            [
+                "9bf2d606.9b99e8"
+            ]
+        ]
+    },
+    {
+        "id": "bdd8033d.ab0bc",
+        "type": "debug",
+        "z": "67b70230.48fa6c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 1060,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "1a2c997f.1cfde7",
+        "type": "ui_audio",
+        "z": "67b70230.48fa6c",
+        "name": "",
+        "group": "33d9a891.e91c08",
+        "voice": "en-US",
+        "always": "",
+        "x": 1100,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "5e5d1ecc.a54ae",
+        "type": "function",
+        "z": "67b70230.48fa6c",
+        "name": "Audio",
+        "func": "msg.payload = \"Energy Output : \"+Math.round(msg.payload.values[0][0])\n \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 810,
+        "y": 400,
+        "wires": [
+            [
+                "a667e127.84dec",
+                "1a2c997f.1cfde7"
+            ]
+        ]
+    },
+    {
+        "id": "a667e127.84dec",
+        "type": "debug",
+        "z": "67b70230.48fa6c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 982.765625,
+        "y": 318.75,
+        "wires": []
+    },
+    {
+        "id": "6670b5ae.3217ec",
+        "type": "cos-get",
+        "z": "adb95456.970bb8",
+        "name": "",
+        "bucket": "prediction",
+        "objectname": "prediction.csv",
+        "mode": "1",
+        "filepath": "",
+        "filename": "",
+        "geturl": false,
+        "geturlExpiry": 900,
+        "cosconfig": "461e56e7.7e6a48",
+        "x": 310,
+        "y": 700,
+        "wires": [
+            [
+                "e6c570f7.17673",
+                "9f21ad14.05e29"
+            ]
+        ]
+    },
+    {
+        "id": "a67526f8.e3e618",
+        "type": "function",
+        "z": "adb95456.970bb8",
+        "name": "Set Global",
+        "func": "var t1 = Math.floor(msg.payload[0][\"0\"])\nvar t2 = Math.floor(msg.payload[0][\"0\"])\nvar t3 = Math.floor(msg.payload[1][\"0\"])\nvar t4 = Math.floor(msg.payload[2][\"0\"])\nvar t5 = Math.floor(msg.payload[3][\"0\"])\nvar v6 = Math.floor(msg.payload[4][\"0\"])\nvar v7 = Math.floor(msg.payload[5][\"0\"])\nvar v8 = Math.floor(msg.payload[6][\"0\"])\nvar v9 = Math.floor(msg.payload[7][\"0\"])\nvar v10 = Math.floor(msg.payload[8][\"0\"])\nvar v11 = Math.floor(msg.payload[9][\"0\"])\nvar v12 = Math.floor(msg.payload[10][\"0\"])\nvar v13 = Math.floor(msg.payload[11][\"0\"])\nvar v14 = Math.floor(msg.payload[12][\"0\"])\n\n\nglobal.set(\"t1\",msg.payload.t1)\nglobal.set(\"t2\",msg.payload.t2)\nglobal.set(\"t3\",msg.payload.t3)\nglobal.set(\"t4\",msg.payload.t4)\nglobal.set(\"t5\",msg.payload.t5)\nglobal.set(\"v6\",msg.payload.v6)\nglobal.set(\"v7\",msg.payload.v7)\nglobal.set(\"v8\",msg.payload.v8)\nglobal.set(\"v9\",msg.payload.v9)\nglobal.set(\"v10\",msg.payload.v10)\nglobal.set(\"v11\",msg.payload.v11)\nglobal.set(\"v12\",msg.payload.v12)\nglobal.set(\"v13\",msg.payload.v13)\nglobal.set(\"v14\",msg.payload.v14)\n\nmsg.payload = t5\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 950,
+        "y": 700,
+        "wires": [
+            [
+                "1d2a5224.d0241e",
+                "98f3a7dc.1ee918"
+            ]
+        ]
+    },
+    {
+        "id": "1d2a5224.d0241e",
+        "type": "debug",
+        "z": "adb95456.970bb8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 1050,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "98f3a7dc.1ee918",
+        "type": "ui_button",
+        "z": "adb95456.970bb8",
+        "name": "",
+        "group": "a5ff8e16.6b218",
+        "order": 2,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": "Start",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 70,
+        "y": 160,
+        "wires": [
+            [
+                "fde3a3ca.60bcb"
+            ]
+        ]
+    },
+    {
+        "id": "9589124e.bf883",
+        "type": "link out",
+        "z": "67b70230.48fa6c",
+        "name": "",
+        "links": [
+            "f0d0225c.735f9"
+        ],
+        "x": 1115,
+        "y": 1300,
+        "wires": []
+    },
+    {
+        "id": "f0d0225c.735f9",
+        "type": "link in",
+        "z": "67b70230.48fa6c",
+        "name": "",
+        "links": [
+            "9589124e.bf883"
+        ],
+        "x": 35,
+        "y": 440,
+        "wires": [
+            [
+                "96ebd07d.0666d"
+            ]
+        ]
+    },
+    {
+        "id": "9ea0346f.ccef48",
+        "type": "function",
+        "z": "adb95456.970bb8",
+        "name": "",
+        "func": "rad = Math.floor (Math.random() * (1300-200)+200);\nmsg.payload = rad;\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 930,
+        "y": 260,
+        "wires": [
+            [
+                "40ae371b.254c18",
+                "1652bc4f.c58624"
+            ]
+        ]
+    },
+    {
+        "id": "40ae371b.254c18",
+        "type": "debug",
+        "z": "adb95456.970bb8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 1110,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "aa0c61a9.83c07",
+        "type": "trigger",
+        "z": "adb95456.970bb8",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "-3",
+        "extend": false,
+        "units": "s",
+        "reset": "5",
+        "bytopic": "all",
+        "name": "",
+        "x": 880,
+        "y": 340,
+        "wires": [
+            [
+                "9ea0346f.ccef48",
+                "26bad1e1.44affe",
+                "5ccac635.6bec68",
+                "9d865e40.3ea66"
+            ]
+        ]
+    },
+    {
+        "id": "ff536745.693118",
+        "type": "ui_button",
+        "z": "adb95456.970bb8",
+        "name": "",
+        "group": "a5ff8e16.6b218",
+        "order": 3,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": "Stop",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "5",
+        "payloadType": "num",
+        "topic": "",
+        "x": 690,
+        "y": 340,
+        "wires": [
+            [
+                "aa0c61a9.83c07"
+            ]
+        ]
+    },
+    {
+        "id": "7fdf91fe.96581",
+        "type": "ui_chart",
+        "z": "adb95456.970bb8",
+        "name": "",
+        "group": "5199a69.114df58",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "label": "Temperature in C",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "4",
+        "ymax": "14",
+        "removeOlder": 1,
+        "removeOlderPoints": "10",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 1370,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "55e449e7.83ad38",
+        "type": "ui_text",
+        "z": "adb95456.970bb8",
+        "group": "5199a69.114df58",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Temperature",
+        "format": "{{msg.payload}} C",
+        "layout": "col-center",
+        "x": 1350,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "f3f98e99.65c75",
+        "type": "ui_text",
+        "z": "adb95456.970bb8",
+        "group": "5199a69.114df58",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Wind Direction",
+        "format": "{{msg.payload}} Deg",
+        "layout": "col-center",
+        "x": 1356,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "9ab1a2ec.969c",
+        "type": "ui_text",
+        "z": "adb95456.970bb8",
+        "group": "5199a69.114df58",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Wind Speed",
+        "format": "{{msg.payload}} in m/s",
+        "layout": "col-center",
+        "x": 1350,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "82048fc5.464a2",
+        "type": "ui_chart",
+        "z": "adb95456.970bb8",
+        "name": "",
+        "group": "5199a69.114df58",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "label": "Wind Speed in m/s",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0.31",
+        "ymax": "21",
+        "removeOlder": 1,
+        "removeOlderPoints": "10",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 1370,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "26bad1e1.44affe",
+        "type": "function",
+        "z": "adb95456.970bb8",
+        "name": "temp",
+        "func": "rad = Math.floor (Math.random() * (6.21-4)+4);\nmsg.payload = rad;\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1190,
+        "y": 460,
+        "wires": [
+            [
+                "55e449e7.83ad38",
+                "7fdf91fe.96581"
+            ]
+        ]
+    },
+    {
+        "id": "5ccac635.6bec68",
+        "type": "function",
+        "z": "adb95456.970bb8",
+        "name": "WinDir",
+        "func": "rad = Math.floor (Math.random() * (59-80)+80);\nmsg.payload = rad;\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1190,
+        "y": 560,
+        "wires": [
+            [
+                "f3f98e99.65c75",
+                "1bf4b9f5.921e36"
+            ]
+        ]
+    },
+    {
+        "id": "9d865e40.3ea66",
+        "type": "function",
+        "z": "adb95456.970bb8",
+        "name": "WinSp",
+        "func": "rad = Math.floor (Math.random() * (21-0.31)+0.31);\nmsg.payload = rad;\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1200,
+        "y": 660,
+        "wires": [
+            [
+                "82048fc5.464a2",
+                "9ab1a2ec.969c"
+            ]
+        ]
+    },
+    {
+        "id": "533cdad4.dbe384",
+        "type": "ui_numeric",
+        "z": "67b70230.48fa6c",
+        "name": "",
+        "label": "Day",
+        "tooltip": "",
+        "group": "f6d16679.915ca8",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "",
+        "format": "{{value}}",
+        "min": "1",
+        "max": "31",
+        "step": 1,
+        "x": 410,
+        "y": 860,
+        "wires": [
+            [
+                "1603a5c6.95f73a"
+            ]
+        ]
+    },
+    {
+        "id": "157a41ee.b61a3e",
+        "type": "ui_numeric",
+        "z": "67b70230.48fa6c",
+        "name": "",
+        "label": "Month",
+        "tooltip": "",
+        "group": "f6d16679.915ca8",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "",
+        "format": "{{value}}",
+        "min": "1",
+        "max": "12",
+        "step": 1,
+        "x": 410,
+        "y": 920,
+        "wires": [
+            [
+                "2756e1d4.7bdf7e"
+            ]
+        ]
+    },
+    {
+        "id": "6cfc2d51.367c04",
+        "type": "ui_numeric",
+        "z": "67b70230.48fa6c",
+        "name": "",
+        "label": "Minutes",
+        "tooltip": "",
+        "group": "f6d16679.915ca8",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "50",
+        "step": "10",
+        "x": 400,
+        "y": 980,
+        "wires": [
+            [
+                "4f3efec6.76df7"
+            ]
+        ]
+    },
+    {
+        "id": "a69acc3f.20945",
+        "type": "ui_numeric",
+        "z": "67b70230.48fa6c",
+        "name": "",
+        "label": "Hour",
+        "tooltip": "",
+        "group": "f6d16679.915ca8",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "23",
+        "step": 1,
+        "x": 410,
+        "y": 1040,
+        "wires": [
+            [
+                "39676d1d.9c7592"
+            ]
+        ]
+    },
+    {
+        "id": "356894e2.7d25dc",
+        "type": "function",
+        "z": "67b70230.48fa6c",
+        "name": "Year",
+        "func": "global.set(\"t5\",msg.payload.t5)\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 550,
+        "y": 1100,
+        "wires": [
+            [
+                "c77e1362.39086"
+            ]
+        ]
+    },
+    {
+        "id": "1603a5c6.95f73a",
+        "type": "function",
+        "z": "67b70230.48fa6c",
+        "name": "Day",
+        "func": "global.set(\"t3\",msg.payload)\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 550,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2756e1d4.7bdf7e",
+        "type": "function",
+        "z": "67b70230.48fa6c",
+        "name": "Month",
+        "func": "global.set(\"t4\",msg.payload)\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 550,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4f3efec6.76df7",
+        "type": "function",
+        "z": "67b70230.48fa6c",
+        "name": "Minutes",
+        "func": "global.set(\"t1\",msg.payload)\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 560,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "39676d1d.9c7592",
+        "type": "function",
+        "z": "67b70230.48fa6c",
+        "name": "Hour",
+        "func": "global.set(\"t2\",msg.payload)\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 550,
+        "y": 1040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8d8a658f.dabbc8",
+        "type": "ui_gauge",
+        "z": "adb95456.970bb8",
+        "name": "",
+        "group": "a5ff8e16.6b218",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Power",
+        "label": "KWh",
+        "format": "{{value}}",
+        "min": "200",
+        "max": "1300",
+        "colors": [
+            "#00b500",
+            "#d5d539",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1330,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "1bf4b9f5.921e36",
+        "type": "ui_gauge",
+        "z": "adb95456.970bb8",
+        "name": "",
+        "group": "5199a69.114df58",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "compass",
+        "title": "Wind Direction",
+        "label": "Deg",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "360",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1360,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "b76802c6.2d982",
+        "type": "ui_chart",
+        "z": "e017ee6d.f0446",
+        "name": "",
+        "group": "ef45188e.e10998",
+        "order": 6,
+        "width": 12,
+        "height": 7,
+        "label": "Prediction by ML Model in KW",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "1",
+        "removeOlderPoints": "12",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 350,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d1b29927.973378",
+        "type": "link in",
+        "z": "e017ee6d.f0446",
+        "name": "",
+        "links": [
+            "818801bc.2a208"
+        ],
+        "x": 75,
+        "y": 140,
+        "wires": [
+            [
+                "b76802c6.2d982",
+                "d6df4e53.f05ad",
+                "aa0e5215.ceb1d",
+                "67c254e.76178ac"
+            ]
+        ]
+    },
+    {
+        "id": "818801bc.2a208",
+        "type": "link out",
+        "z": "adb95456.970bb8",
+        "name": "",
+        "links": [
+            "d1b29927.973378"
+        ],
+        "x": 1260,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "b31cddc7.9157e",
+        "type": "debug",
+        "z": "e017ee6d.f0446",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 530,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "8b81b7d8.0b6f38",
+        "type": "debug",
+        "z": "e017ee6d.f0446",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 750,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "e5d79dba.afffe",
+        "type": "function",
+        "z": "e017ee6d.f0446",
+        "name": "",
+        "func": "var b = Buffer.from(msg.payload);\nvar s = b.toString();\nvar out = s;\nmsg.payload = out;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 690,
+        "y": 360,
+        "wires": [
+            [
+                "8b81b7d8.0b6f38",
+                "39fa22b0.1e857e"
+            ]
+        ]
+    },
+    {
+        "id": "39fa22b0.1e857e",
+        "type": "csv",
+        "z": "e017ee6d.f0446",
+        "name": "",
+        "sep": ",",
+        "hdrin": true,
+        "hdrout": "",
+        "multi": "mult",
+        "ret": "\\r\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": false,
+        "x": 890,
+        "y": 360,
+        "wires": [
+            [
+                "d01f4218.9506e",
+                "5579f7f7.46c868"
+            ]
+        ]
+    },
+    {
+        "id": "d01f4218.9506e",
+        "type": "debug",
+        "z": "e017ee6d.f0446",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 990,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "a4224c9b.ea8f8",
+        "type": "inject",
+        "z": "e017ee6d.f0446",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 80,
+        "y": 440,
+        "wires": [
+            [
+                "39255a14.f28486"
+            ]
+        ]
+    },
+    {
+        "id": "39255a14.f28486",
+        "type": "cos-get",
+        "z": "e017ee6d.f0446",
+        "name": "",
+        "bucket": "prediction",
+        "objectname": "LV ActivePower.csv",
+        "mode": "1",
+        "filepath": "",
+        "filename": "",
+        "geturl": false,
+        "geturlExpiry": 900,
+        "cosconfig": "461e56e7.7e6a48",
+        "x": 470,
+        "y": 360,
+        "wires": [
+            [
+                "b31cddc7.9157e",
+                "e5d79dba.afffe"
+            ]
+        ]
+    },
+    {
+        "id": "5579f7f7.46c868",
+        "type": "function",
+        "z": "e017ee6d.f0446",
+        "name": "Set Global",
+        "func": "var t1 = Math.floor(msg.payload[0][\"0\"])\nvar t2 = Math.floor(msg.payload[0][\"0\"])\nvar t3 = Math.floor(msg.payload[1][\"0\"])\nvar t4 = Math.floor(msg.payload[2][\"0\"])\nvar t5 = Math.floor(msg.payload[3][\"0\"])\nvar v6 = Math.floor(msg.payload[4][\"0\"])\nvar v7 = Math.floor(msg.payload[5][\"0\"])\nvar v8 = Math.floor(msg.payload[6][\"0\"])\nvar v9 = Math.floor(msg.payload[7][\"0\"])\nvar v10 = Math.floor(msg.payload[8][\"0\"])\nvar v11 = Math.floor(msg.payload[9][\"0\"])\nvar v12 = Math.floor(msg.payload[10][\"0\"])\nvar v13 = Math.floor(msg.payload[11][\"0\"])\nvar v14 = Math.floor(msg.payload[12][\"0\"])\n\n\nglobal.set(\"t1\",msg.payload.t1)\nglobal.set(\"t2\",msg.payload.t2)\nglobal.set(\"t3\",msg.payload.t3)\nglobal.set(\"t4\",msg.payload.t4)\nglobal.set(\"t5\",msg.payload.t5)\nglobal.set(\"v6\",msg.payload.v6)\nglobal.set(\"v7\",msg.payload.v7)\nglobal.set(\"v8\",msg.payload.v8)\nglobal.set(\"v9\",msg.payload.v9)\nglobal.set(\"v10\",msg.payload.v10)\nglobal.set(\"v11\",msg.payload.v11)\nglobal.set(\"v12\",msg.payload.v12)\nglobal.set(\"v13\",msg.payload.v13)\nglobal.set(\"v14\",msg.payload.v14)\n\nmsg.payload = t5\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1110,
+        "y": 360,
+        "wires": [
+            [
+                "29f1a68c.3088fa",
+                "d6df4e53.f05ad"
+            ]
+        ]
+    },
+    {
+        "id": "29f1a68c.3088fa",
+        "type": "debug",
+        "z": "e017ee6d.f0446",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 1210,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "faf7759.2fcc688",
+        "type": "ui_chart",
+        "z": "e017ee6d.f0446",
+        "name": "",
+        "group": "ef45188e.e10998",
+        "order": 8,
+        "width": 12,
+        "height": 7,
+        "label": "Actual Prediction in KW",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "12",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 330,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d6df4e53.f05ad",
+        "type": "function",
+        "z": "e017ee6d.f0446",
+        "name": "",
+        "func": "msg.payload = msg.payload - Math.floor (Math.random() * (100-20)+20);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 150,
+        "y": 180,
+        "wires": [
+            [
+                "faf7759.2fcc688",
+                "1015cf76.109691"
+            ]
+        ]
+    },
+    {
+        "id": "df35895f.8dab48",
+        "type": "delay",
+        "z": "e017ee6d.f0446",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "10",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 220,
+        "y": 360,
+        "wires": [
+            [
+                "39255a14.f28486"
+            ]
+        ]
+    },
+    {
+        "id": "aa0e5215.ceb1d",
+        "type": "ui_text",
+        "z": "e017ee6d.f0446",
+        "group": "ef45188e.e10998",
+        "order": 2,
+        "width": 4,
+        "height": 1,
+        "name": "",
+        "label": "Power = ",
+        "format": "{{msg.payload}}kW",
+        "layout": "row-center",
+        "x": 280,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "1015cf76.109691",
+        "type": "ui_text",
+        "z": "e017ee6d.f0446",
+        "group": "ef45188e.e10998",
+        "order": 4,
+        "width": 4,
+        "height": 1,
+        "name": "",
+        "label": "Actual Power = ",
+        "format": "{{msg.payload}}kW",
+        "layout": "row-center",
+        "x": 300,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "1609bbba.0fbda4",
+        "type": "ui_template",
+        "z": "e017ee6d.f0446",
+        "group": "ef45188e.e10998",
+        "name": "Background Image",
+        "order": 39,
+        "width": 0,
+        "height": 0,
+        "format": "<html>\n<style>\n    body{\n        background-image:url(\"https://cdn.britannica.com/75/114975-050-E61977EE/Wind-turbines-Tehachapi-Calif.jpg\");\n        background-size:cover;\n    }\n</style>\n<body></body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 90,
+        "y": 20,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "157d578b.b7eff8",
+        "type": "link in",
+        "z": "e017ee6d.f0446",
+        "name": "Cloud",
+        "links": [
+            "8eec39e3.e5dd98"
+        ],
+        "x": 60,
+        "y": 360,
+        "wires": [
+            [
+                "df35895f.8dab48"
+            ]
+        ]
+    },
+    {
+        "id": "8eec39e3.e5dd98",
+        "type": "link out",
+        "z": "adb95456.970bb8",
+        "name": "",
+        "links": [
+            "157d578b.b7eff8"
+        ],
+        "x": 280,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "67c254e.76178ac",
+        "type": "ui_chart",
+        "z": "e017ee6d.f0446",
+        "name": "",
+        "group": "ef45188e.e10998",
+        "order": 17,
+        "width": 19,
+        "height": 10,
+        "label": "Last 72Hr Prediction",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "1300",
+        "removeOlder": "72",
+        "removeOlderPoints": "24",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 720,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e7a58bc4.623658",
+        "type": "inject",
+        "z": "aea71465.ff2d58",
+        "name": "",
+        "topic": "",
+        "payload": "1",
+        "payloadType": "json",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 230,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6c9494e1.ebe41c",
+        "type": "template",
+        "z": "aea71465.ff2d58",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "plain",
+        "template": "{{#payload}}\n<tr>\n    <td>{{sensor}}</td>\n    <td>{{temp}}</td>\n    <td>{{humidity}}</td>\n</tr>\n{{/payload}}",
+        "output": "str",
+        "x": 480,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bf04c8f7.bb7648",
+        "type": "function",
+        "z": "aea71465.ff2d58",
+        "name": "",
+        "func": "var sensor1={sensor:\"sensor1\",temp:21,humidity:60};\nvar sensor2={sensor:\"sensor2\",temp:27,humidity:67};\nvar sensor3={sensor:\"sensor3\",temp:30,humidity:69};\nvar array=[sensor1,sensor2,sensor3];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 340,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "695d6abb.2e8f54",
+        "type": "debug",
+        "z": "67b70230.48fa6c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 910,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "3f82ae95.7104a2",
+        "type": "function",
+        "z": "67b70230.48fa6c",
+        "name": "",
+        "func": "var t3 = global.get(\"t3\")\nmsg.payload = t3\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 710,
+        "y": 860,
+        "wires": [
+            [
+                "695d6abb.2e8f54"
+            ]
+        ]
+    },
+    {
+        "id": "2ee9851c.0a01ca",
+        "type": "inject",
+        "z": "67b70230.48fa6c",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 540,
+        "y": 800,
+        "wires": [
+            [
+                "3f82ae95.7104a2"
+            ]
+        ]
+    }
+]
